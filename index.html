@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body onload="moveSunMoon();">
+    <a href="#header" id="to_top">
+        <div>トップへ</div>
+    </a>
+    <div id="sun_moon_flex">
+        <div>
+        </div>
+        <div id="sun_moon">
+            <img src="img/sun.png" id="sun_img">
+            <img src="img/moon.png" id="moon_img">
+        </div>
+    </div>
+
+    <header id="header">
+        <a href="index.html">
+            <h1>
+                <img src="img/owl_logo_clear.png">
+            </h1>
+        </a>
+    </header>
+
+    <div id="wood_leaf_left"></div>
+    <div id="wood_leaf_right"></div>
+    <nav>
+        <ul>
+            <li class="default_hidden">
+                <a href="#header">
+                    トップへ
+                </a>
+            </li>
+            <li>
+                <a href="#profile">
+                    プロフィール
+                </a>
+            </li>
+
+            <li>
+                <a href="#license_group">
+                    保有資格
+                </a>
+            </li>
+            <li>
+                <a href="#language">
+                    得意言語
+                </a>
+            </li>
+            <li>
+                <a href="#work_group">
+                    制作物
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    連絡フォーム
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="hamburger default_hidden">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="main">
+        <div id="left_pillar"></div>
+        <div id="center_area">
+            
+
+            <div id="top">
+                <div id="top_owl">
+                    <img src="img/owl_nomal.png">
+                </div>
+                <div id="branch"></div>
+                <div id="jointer">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="icon_frame">
+                    <img src="img/my_img.jpg" style="width: 298px;height: 298px;" class="icon">
+                </div>
+
+                <div id="name">
+                    <div class="label">
+                        名前
+                    </div>
+                    <div class="title">
+                        太田 雄翔
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile_language_group c_margin" id="profile">
+                <div class="profile_language_left">
+                    <div class="profile_language_branch"></div>
+                    <div id="blue_owl">
+                        <img src="img/owl_blue.png">
+                    </div>
+                    <div class="profile_language_frame">
+                        <div><img src="img/profile_icon.png" class="icon"></div>
+                    </div>
+                    <div id="blue_owl_mouth">
+                        <img src="img/owl_blue_mouth.png">
+                    </div>
+
+                </div>
+                <div class="profile_language_right">
+                    <h2 class="title">
+                        プロフィール
+                    </h2>
+                    <ul class="detail">
+                        <li>
+                            出身校:専門学校東京スクールオブビジネス
+                        </li>
+                        <li>
+                            趣味:ゲーム、作曲
+                        </li>
+                        <li>
+                            好きなもの:フクロウ
+                        </li>
+                        <li>
+                            育ち:岡山県
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="license_group" class="c_margin">
+                <div id="license_left">
+                    <h2 class="title">
+                        保有資格
+                    </h2>
+                    <ul class="detail">
+                        <li>
+                            ITパスポート
+                        </li>
+                        <li>
+                            ビジネス文書検定3級
+                        </li>
+                        <li>
+                            秘書検定3級
+                        </li>
+                        <li>
+                            WEBクリエイター検定 スタンダード
+                        </li>
+                    </ul>
+                </div>
+                <div id="license_right">
+                    <div id="license_branch"></div>
+                    <div id="red_owl">
+                        <img src="img/owl_red.png">
+                    </div>
+                    <div id="license_frame">
+                        <div><img src="img/license_img.png" class="icon"></div>
+                    </div>
+                    <div id="red_owl_mouth">
+                        <img src="img/owl_red_mouth.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile_language_group c_margin" id="language">
+                <div class="profile_language_left">
+                    <div class="profile_language_branch"></div>
+                    <div id="green_owl">
+                        <img src="img/owl_green.png">
+                    </div>
+                    <div class="profile_language_frame">
+                        <div><img src="img/language_img.png" class="icon"></div>
+                    </div>
+                    <div id="green_owl_mouth">
+                        <img src="img/owl_green_mouth.png">
+                    </div>
+                </div>
+                <div class="profile_language_right">
+                    <h2 class="title">
+                        得意言語
+                    </h2>
+                    <ul class="detail">
+                        <li>
+                            HTML
+                        </li>
+                        <li>
+                            PHP
+                        </li>
+                        <li>
+                            Python
+                        </li>
+                        <li>
+                            JAVA
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="work_group" class="small_margin">
+                <h2 class="title">
+                    制作物
+                </h2>
+                <div id="work_list">
+                    <div id="work_row_1">
+                        <div>
+
+                                <div class="work_thumbnail">
+                                    <img src="https://placehold.jp/560x315.png">
+                                </div>
+
+                            <div class="work_branch">
+                            </div>
+                            
+                                <div class="detail work_detail">
+                                    coming soon...
+                                </div>
+                            
+                        </div>
+                        <div>
+                            <div class="work_thumbnail">
+                                <img src="https://placehold.jp/560x315.png">
+                            </div>
+                            <div class="work_branch">
+                            </div>
+                            <div class="detail work_detail">
+                                coming soon...
+                            </div>
+                        </div>
+                    </div>
+                    <div id="work_row_2">
+                        <div>
+                            <div class="work_thumbnail">
+                                <img src="https://placehold.jp/560x315.png">
+                            </div>
+                            <div class="work_branch">
+                            </div>
+                            <div class="detail work_detail">
+                                coming soon...
+                            </div>
+                        </div>
+                        <div>
+                            <div class="work_thumbnail">
+                                <img src="https://placehold.jp/560x315.png">
+                            </div>
+                            <div class="work_branch">
+                            </div>
+                            <div class="detail work_detail">
+                                coming soon...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="small_margin">
+                <h2 class="title">
+                    連絡フォーム
+                </h2>
+                <form action="php/contact.php" method="post">
+                    名前<br>
+                    <input type="text" name="name"><br>
+                    メールアドレス<br>
+                    <input type="text" name="address"><br>
+                    内容<br>
+                    <textarea name="content"></textarea><br>
+                    <input type="submit" value="送信" id="submit">
+                </form>
+            </div>
+        </div>
+        <div id="right_pillar"></div>
+    </div>
+    <footer><p>©太田 雄翔</p></footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

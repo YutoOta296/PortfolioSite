@@ -1,0 +1,760 @@
+@charset "UTF-8";
+
+* {
+    position: relative;
+    z-index: 1;
+}
+body {
+    min-width: 1800px;
+    background-color: #71DDFF;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 30px;
+    color: rgb(70, 45, 29);
+    transition: all 3s 0s linear;
+}
+#main{
+    display: flex;
+}
+#to_top {
+    user-select: none;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: fixed;
+    width: 110px;
+    height: 110px;
+    right: 4vb;
+    bottom: 4vb;
+    z-index: 300;
+    transition: transform 0.1s 0s linear;
+}
+
+#to_top:hover {
+    transform: scale(1.3);
+}
+
+#to_top:active {
+    background-color: rgb(219, 168, 0);
+    color: white;
+    border: solid white;
+}
+
+#wood_leaf_left,
+#wood_leaf_right {
+    background-color: green;
+    width: 399px;
+    height: 399px;
+    z-index: 200;
+}
+
+#wood_leaf_left {
+    border-radius: 0 0 100% 0;
+    position: absolute;
+    top: 0px;
+}
+
+#wood_leaf_right {
+    border-radius: 0 0 0 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#left_pillar{
+    width: 220px;
+    height: auto;
+}
+#right_pillar{
+    width: 220px;
+    height: auto;
+}
+#center_area{
+    width: 100%;
+    padding-bottom: 500px;
+}
+
+/* 背景画像設定 */
+header,
+#branch,
+.profile_language_branch,
+#license_branch,
+.work_branch {
+    background-image: url(../img/wood_header.png);
+    background-size: 215px;
+    background-repeat: repeat;
+}
+
+#left_pillar,
+#right_pillar,
+#jointer div,
+.profile_language_frame div,
+#license_frame div {
+    background-image: url(../img/wood.png);
+    background-size: 215px;
+    background-repeat: repeat;
+}
+
+
+#sun_moon_flex {
+    position: absolute;
+    z-index: 0;
+    top: 350px;
+    width: 100%;
+    display: flex;
+
+}
+
+#sun_moon_flex div {
+    width: 100%;
+}
+
+#sun_moon {
+    display: flex;
+    justify-content: center;
+}
+
+#sun_moon img {
+    width: 250px;
+}
+
+#sun_img {
+    opacity: 1;
+    transition: all 3s 0s linear;
+}
+
+#moon_img {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    transition: all 3s 0s linear;
+}
+
+
+/* 共通設定 */
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.icon {
+    display: block;
+    margin: auto;
+}
+
+.title {
+    font-size: 80px;
+    font-weight: 700;
+    transition: all 3s 0s linear;
+}
+
+.detail {
+    transition: all 3s 0s linear;
+}
+
+.label {
+    transition: all 3s 0s linear;
+}
+
+/* ベース設定 */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+}
+
+header img {
+    width: 593px;
+    margin: 0px 100px;
+}
+
+#main{
+    height: auto;
+    width: auto;
+}
+
+
+/* ナビゲーション設定 */
+nav{
+    background-image: url(../img/wood_header.png);
+    background-size: 215px;
+    background-repeat: repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul{
+    background-color: white;
+    width: 80%;
+    margin: 20px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    display: block;
+}
+nav ul li:nth-child(2),
+nav ul li:nth-child(3),
+nav ul li:nth-child(4),
+nav ul li:nth-child(5){
+    border-right: 5px solid black;
+}
+nav ul li{
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav ul li:hover{
+    background-color: orange;
+}
+
+/* トップ設定 */
+#top{
+    position: relative;
+    padding-top: 238px;
+    width: 100%;
+}
+#top_owl {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 43px;
+    z-index: 2;
+}
+
+#top_owl img {
+    height: 209px;
+}
+
+#branch {
+    height: 59px;
+    width: 100%;
+}
+
+#jointer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 193px;
+}
+
+#jointer div {
+    background-image: url(../img/wood.png);
+    background-size: 215px;
+    background-repeat: repeat;
+    height: 39px;
+    width: 38px;
+}
+
+#icon_frame {
+    background-image: url(../img/wood.png);
+    background-size: 215px;
+    display: flex;
+    margin: auto;
+    width: 339px;
+    height: 339px;
+}
+
+#name .label {
+    margin: 28px auto;
+    font-weight: 700;
+}
+
+/* プロフィール設定 */
+.profile_language_group {
+    width: 100%;
+    height: 566px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile_language_left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.profile_language_branch {
+    width: 100%;
+    height: 109px;
+}
+.icon{
+    width: 1000px;
+    height: 100px;
+}
+#blue_owl,
+#green_owl {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+#blue_owl img,
+#green_owl img {
+    width: 368px;
+}
+
+#blue_owl_mouth,
+#green_owl_mouth {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+#blue_owl_mouth img,
+#green_owl_mouth img {
+    width: 368px;
+}
+
+.profile_language_right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+
+.profile_language_frame {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 186px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.profile_language_frame div {
+    height: 400px;
+    width: 400px;
+    display: flex;
+}
+.profile_language_frame img {
+    height: 350px;
+    width: 350px;
+}
+
+/* 資格設定 */
+#license_group {
+    width: 100%;
+    height: 566px;
+    display: flex;
+    justify-content: center;
+}
+
+#license_left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+#license_branch {
+    width: 100%;
+    height: 109px;
+}
+
+#red_owl {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+#red_owl img {
+    width: 368px;
+}
+
+#red_owl_mouth {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+#red_owl_mouth img {
+    width: 368px;
+}
+
+#license_right {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#license_frame {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 186px;
+    display: flex;
+    justify-content: center;
+}
+
+#license_frame div {
+    height: 400px;
+    width: 400px;
+    display: flex;
+}
+#license_frame img{
+    height: 350px;
+    width: 350px;
+}
+.c_margin,
+.small_margin {
+    margin-top: 286px;
+}
+
+#work_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 66px;
+}
+
+#work_list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 244px;
+}
+
+#work_list div {
+    display: flex;
+    width: 100%;
+    gap: 203px;
+}
+
+#work_list div div {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+
+#work_list div div .work_thumbnail {
+    display: flex;
+}
+
+
+.work_branch {
+    width: 100px;
+    height: 109px;
+}
+
+.work_detail {
+    margin-top: 18px;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.582);
+    margin-top: 60px;
+    margin-right: 300px;
+    margin-left: 300px;
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: left;
+    border-radius: 10px;
+}
+form input, form textarea{
+    background-color: white;
+    margin-bottom: 40px;
+    width: 100%;
+    border: 2px solid rgb(70, 45, 29);
+}
+form textarea{
+    height: 400px;
+    resize: none;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 20px;
+}
+#submit{
+    background-color: orange;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+footer {
+    background-image: url(../img/footer_grass.png);
+    object-fit: cover;
+    width: 100%;
+    padding: 150px 0px 50px;
+    position: absolute;
+    bottom: 0px;
+}
+.default_hidden{
+    display: none;
+}
+
+/* 会計ツールcss */
+header,
+#branch {
+    background-image: url(../img/wood_header.png);
+    background-size: 215px;
+    background-repeat: repeat;
+}
+
+#left_pillar,
+#right_pillar,
+#jointer div {
+    background-image: url(../img/wood.png);
+    background-size: 215px;
+    background-repeat: repeat;
+}
+
+#work_kaikei {
+    text-align: center;
+}
+
+
+#work_kaikei #center_area {
+    padding-top: 0px;
+}
+
+#work_kaikei .title {
+    margin-top: 51px;
+    margin-bottom: 51px;
+}
+
+.work_site_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    gap: 40px;
+    max-width: 1000px;
+    word-break: break-all;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body{
+        min-width: 0px;
+    }
+    
+    header,
+    #branch,
+    .profile_language_branch,
+    #license_branch,
+    .work_branch {
+        background-size: 100px;
+    }
+    #jointer div,
+    #left_pillar,
+    #right_pillar,
+    .profile_language_frame div,
+    #license_frame div {
+        background-size: 100px;
+    }
+    #left_pillar,
+    #right_pillar{
+        width: 20px;
+    }
+    #to_top{
+        display: none;
+    }
+    .default_hidden{
+        display: block;
+    }
+    h1 img{
+        width: 100px;
+    }
+    #wood_leaf_left,
+    #wood_leaf_right{
+        width: 100px;
+        height: 100px;
+        
+    }
+    
+    nav{
+        background-image: none;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        z-index: 100;
+    }
+    nav ul{
+        background-color: rgba(255, 255, 255, 0);
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+        transform: translateY(100%);
+        transition: transform 0.5s 0s ease;
+    }
+    nav ul li{
+        width: 100%;
+        padding: 20px;
+        background-color: orange;
+    }
+    nav ul li:nth-child(1),
+    nav ul li:nth-child(2),
+    nav ul li:nth-child(3),
+    nav ul li:nth-child(4),
+    nav ul li:nth-child(5),
+    nav ul li:nth-child(6){
+        border: none;
+        border-top: solid white 1px;
+    }
+    .hamburger{
+        background-color: orange;
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        width: 75px;
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: solid white 1px;
+        z-index: 100;
+    }
+    .hamburger div{
+        background-color: white;
+        height: 5px;
+        width: 70%;
+        transition: opacity 0.5s 0s ease, transform 0.5s 0s ease;
+    }
+    .hamburger.open div:nth-of-type(1){
+        transform: translateY(15px) rotate(45deg);
+    }
+    .hamburger.open div:nth-of-type(2){
+        opacity: 0;
+    }
+    .hamburger.open div:nth-of-type(3){
+        transform: translateY(-15px) rotate(-45deg);
+    }
+    ul.open{
+        transform: translateY(0px)
+    }
+    #center_area{
+        padding-bottom: 300px;
+    }
+    #branch{
+        height: 50px;
+    }
+    .profile_language_group{
+        flex-direction: column;
+    }
+    #license_group{
+        flex-direction: column-reverse;
+    }
+    .profile_language_group,
+    #license_group{
+        gap: 50px;
+        height: auto;
+    }
+    .profile_language_left,
+    #license_right{
+        width: 100%;
+    }
+    .profile_language_branch,
+    #license_branch,
+    .work_branch{
+        height: 50px;
+    }
+    #blue_owl,
+    #blue_owl_mouth,
+    #red_owl,
+    #red_owl_mouth,
+    #green_owl,
+    #green_owl_mouth{
+        top: -374px;
+    }
+    #blue_owl img,
+    #blue_owl_mouth img,
+    #red_owl img,
+    #red_owl_mouth img,
+    #green_owl img,
+    #green_owl_mouth img{
+        width: 300px;
+    }
+    .profile_language_frame,
+    #license_frame{
+        top: -227px;
+    }
+    .profile_language_frame div,
+    #license_frame div{
+        width: 300px;
+        height: 300px;
+    }
+    .profile_language_frame img,
+    #license_frame img{
+        width: 270px;
+        height: 270px;
+    }
+    .profile_language_right,
+    #license_left{
+        width: 100%;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .detail{
+        font-size: 15px;
+    }
+    .c_margin{
+        margin-top: 600px;
+    }
+    .small_margin{
+        margin-top: 250px;
+    }
+    #work_list,
+    #work_list div{
+        gap: 150px;
+    }
+    #work_list img{
+    width: 250px;
+    }
+    #work_list div{
+        flex-direction: column;
+        align-items: center;
+    }
+    form{
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+
+    .work_img{
+        width: 300px;
+    }
+}
