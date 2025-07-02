@@ -556,11 +556,23 @@ header,
     word-break: break-all;
 }
 
+.work_btn{
+    background-color: orange;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 20px 50px;
+    margin-top: 50px;
+}
 
+.work_img{
+    width: 70%;
+}
+    
 
 @media screen and (max-width: 768px) {
     body{
         min-width: 0px;
+        zoom: 100%;
     }
     
     header,

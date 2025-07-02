@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body onload="moveSunMoon();" id="work_kaikei">
+    <div id="to_top" onclick="$('html,body').animate({ scrollTop: 0 }, '0');">トップへ</div>
+    <div id="sun_moon_flex">
+        <div>
+        </div>
+        <div id="sun_moon">
+            <img src="../img/sun.png" id="sun_img">
+            <img src="../img/moon.png" id="moon_img">
+        </div>
+    </div>
+    <header>
+        <a href="../index.html">
+            <h1>
+                <img src="../img/owl_logo_clear.png">
+            </h1>
+        </a>
+    </header>
+    <div id="wood_leaf_left"></div>
+    <div id="wood_leaf_right"></div>
+
+    <div id="main">
+        <div id="left_pillar"></div>
+        <div id="center_area">
+            <div class="title">GambleToDo</div>
+
+            <img src="../img/GambleToDo_thumbnail.png" class="work_img">
+
+            <div class="detail work_site_detail">
+                <div>
+                    使用したもの:HTML/CSS,PHP,JavaScript/MySQL                    
+                </div>
+                <div class="work_text">
+                    専門学校在学時にチームで開発した「ギャンブルとToDOリスト」を掛け合わせたウェブシステム。<br>
+                    ２１世紀アカデメイア主催の「第1回 A-TECHコンテスト全国大会」でグランプリを取得した。
+                </div>
+            </div>
+
+            <button class="work_btn" onclick="jumpPage('http://gambletodo.is-great.net/')">ページへ飛ぶ</button>
+
+        </div>
+        <div id="right_pillar"></div>
+    </div>
+    <footer>©太田 雄翔</footer>
+    <script>
+        function jumpPage(targetURL) {
+            window.open(targetURL);
+        }
+        
+    </script>
+</body>
+
+</html>
