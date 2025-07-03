@@ -567,6 +567,10 @@ header,
 .work_img{
     width: 70%;
 }
+
+    #work_list img{
+    height: 300px;
+    }
     
 
 @media screen and (max-width: 768px) {
@@ -754,7 +758,7 @@ header,
         gap: 150px;
     }
     #work_list img{
-    width: 250px;
+    height: 150px;
     }
     #work_list div{
         flex-direction: column;
