@@ -556,11 +556,27 @@ header,
     word-break: break-all;
 }
 
+.work_btn{
+    background-color: orange;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 20px 50px;
+    margin-top: 50px;
+}
 
+.work_img{
+    width: 70%;
+}
+
+    #work_list img{
+    height: 300px;
+    }
+    
 
 @media screen and (max-width: 768px) {
     body{
         min-width: 0px;
+        zoom: 100%;
     }
     
     header,
@@ -742,7 +758,7 @@ header,
         gap: 150px;
     }
     #work_list img{
-    width: 250px;
+    height: 150px;
     }
     #work_list div{
         flex-direction: column;
